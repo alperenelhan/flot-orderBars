@@ -7,12 +7,12 @@ Package.describe({
   git: 'https://github.com/alperenelhan/flot-orderBars.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  documentation: null
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
-  api.use('flot:flot', 'client');
-  api.imply('flot:flot', 'client');
+  api.use('flot:flot@0.8.3', 'client');
+  api.imply('flot:flot@0.8.3', 'client');
   api.addFiles('flot-orderbars.js', 'client');
 });
